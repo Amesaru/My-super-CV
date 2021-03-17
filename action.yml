@@ -1,0 +1,5 @@
+name: 'My CV'
+description: 'My CV'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
