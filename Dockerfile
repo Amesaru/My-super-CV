@@ -6,4 +6,5 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 COPY . .
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+RUN chmod +x entrypoint.sh
+CMD [ "/entrypoint.sh" ]
