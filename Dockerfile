@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
     texlive-xetex \
     lmodern
 
-COPY CV .
+COPY . .
 
 ENTRYPOINT [ "/entrypoint.sh" ]
