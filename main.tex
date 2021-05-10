@@ -49,7 +49,7 @@
 % provides \isempty test
 \usepackage{xstring, xifthen}
 \usepackage{enumitem}
-\usepackage[english]{babel}
+\usepackage[english, russian]{babel}
 \usepackage{blindtext}
 \usepackage{pdfpages}
 \usepackage{changepage}
@@ -62,6 +62,7 @@
 %\usepackage[defaultsans]{droidsans}
 %\usepackage[default]{comfortaa}
 %\usepackage{cmbright}
+\usepackage[default]{raleway}
 %\usepackage{fetamont}
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
@@ -79,6 +80,7 @@
 %---------------------------------------------------------------------------------------- 
 
 % include the fontawesome icon set
+\usepackage{fontawesome}
 
 % use to vertically center content
 % credits to: http://tex.stackexchange.com/questions/7219/how-to-vertically-center-two-images-next-to-each-other
@@ -316,7 +318,7 @@
 	% if you need more control on page breaks, remove the parbox
 	\parbox{\mpwidth}{
 		\begin{tabular*}{1\mpwidth}{p{0.66\mpwidth}  r}
-	 		\textcolor{black}{\textbf{#2}} & \colorbox{accentcol}{\makebox[0.32\mpwidth]{\textcolor{white}{\textbf{#1}}}} \\
+	 		\textcolor{black}{\textbf{#2}} & \\ 
 			\textcolor{maincol}{#3} & \\
 		\end{tabular*}\\[8pt]
 	
@@ -428,101 +430,46 @@
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\includegraphics[width=\linewidth]{resources/image.jpg}	%trimming relative to image size
 
 %---------------------------------------------------------------------------------------
 %	META SKILLS
 %----------------------------------------------------------------------------------------
-	\fcolorbox{white}{white}{\begin{minipage}[c][1.5cm][c]{1\mpwidth}
-		\LARGE{\textbf{\textcolor{maincol}{Savin Egor}}} \\[2pt]
-		\normalsize{ \textcolor{maincol} {HSE \ CIS \ Applied mathematics and infromatics} }
+	\fcolorbox{white}{white}{\begin{minipage}[c][2cm][c]{1\mpwidth}
+		\LARGE{\textbf{\textcolor{maincol}{Савин Егор}}} \\[12pt]
+		\normalsize{ \textcolor{maincol} {НИУ ВШЭ, \ ФКН, \ Прикладная математика и информатика} }
 \end{minipage}} \\
-\icontext{CaretRight}{12}{XX.XX.XXXX in Los Angeles}{black}\\[6pt]
-\icontext{CaretRight}{12}{german}{black}\\[6pt]
-\icontext{CaretRight}{12}{unmarried}{black}\\[6pt]
+\icontext{CaretRight}{12}{Москва, Россия}{black}\\[1pt]
 
 
 
 \cvsection{Skills}
 
-\cvskill{Software development} {6+ Jahre} {1} \\[-2pt]
+\cvskill{C++} {} {1} \\[-2pt]
 
-\cvskill{Cyber security} {4+ yrs.} {0.64} \\[-2pt]
+\cvskill{C} {} {1} \\[-2pt]
 
-\cvskill{Internet business/ \newline E-commerce} {4+ yrs.} {0.64} \\[-2pt]
+\cvskill{Python} {} {1} \\[-2pt]
 
-\cvskill{Web development} {2+ yrs.} {0.32} \\[-2pt]
+\cvskill{Assembler} {} {1} \\[-2pt] \\
 
-\cvskill{Big data/ \newline Data science} {2+ yrs.} {0.32} \\[-2pt]
+\cvskill{Русский} {} {1} \\[-2pt]
 
-\cvskill{Distributed legder \newline technology} {2+ yrs.} {0.32} \\[-2pt]
-
-\cvskill{Internet of things} {1+ yrs.} {0.16} \\[-2pt]
-
-\cvskill{Cloud computing} {1+ yrs.} {0.16} \\[-2pt] \\
-
-\cvskill{German} {L1} {1} \\[-2pt]
-
-\cvskill{English} {C1} {0.9} \\[-2pt]
+\cvskill{Английский} {} {} \\[-2pt]
 
 \newpage
 %---------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\cvsection{Education}
-
-\cvmetaevent
-{XX/XXXX - XX/XXXX}
-{Management Information Systems (M.Sc.)}
-{University of Lorem}
-{\textit{Field 1 • Field 2} \newline Master's thesis: \glqq title of Master's thesis\grqq.}
-\cvmetaevent
-{XX/XXXX - XX/XXXX}
-{Managment Information Systems (B.Sc.)}
-{University of Lorem}
-{\textit{Field 1 • Field 2} \newline Bachelor's thesis: \glqq title of Master's thesis\grqq.}
-
-\cvmetaevent
-{XX/XXXX - XX/XXXX}
-{A-Level}
-{High School Lorem}
-{\textit{Field 1 • Field 2 • Field 3 • Field 4 • Field 5}.}
-
-
-%
-%\cvsection{Projekte}
-
-%	\cvlist{
-%		\item \hyperlink{https://github.com/philipempl/ether-twin}{\textbf{Ether-Twin.}}\\ Ethereum Applikation für Digital Twins.
-%		\item \hyperlink{https://github.com/philipempl/Peter-Pan}{\textbf{Peter Pan.}}\\ Koch-App (t.b.a.).
-%		\item \hyperlink{https://github.com/philipempl/Innovation-Tool}{\textbf{Innovation Tool.}}\\ Webcrawler für \hyperlink{https://ibi.de/}{Ibi}.
-%		\item \hyperlink{https://github.com/philipempl/cozone}{\textbf{COZONE.}} \\ Soziales Netzwerk (t.b.a.).
-%		\item \hyperlink{https://github.com/geritwagner/enlit}{\textbf{ENLIT.}}\\ Exploring new Literature (Bachelorarbeit).
-%		\item \textbf{Crowdfunding.} \\Modul mit \hyperlink{https://senacor.com/}{Senacor} für \hyperlink{https://www.paydirekt.de/}{paydirekt}.
-%		}
-
-\cvsection{Interests}
-
-\icontext{CaretRight}{12}{Guitarist}{black}\\[6pt]
-\icontext{CaretRight}{12}{DIY}{black}\\[6pt]
-\icontext{CaretRight}{12}{Fitness}{black}\\[6pt]
-\icontext{CaretRight}{12}{Cooking}{black}\\[6pt]
-\icontext{CaretRight}{12}{Travel}{black}\\[6pt]
 
 
 
 
-\cvsection{Contact}
 
-\icontext{MapMarker}{16}{Street name XX\\D-XXXXX Lorem}{black}\\[6pt]
-\icontext{MobilePhone}{16}{+XX XXX XXXX XXXX}{black}\\[6pt]
-\iconemail{Envelope}{16}{XXXX@XXXXX.XX}{XXXX@XXXXX.XX}{black}\\[6pt]
-\iconhref{Home}{16}{XXX.XXX-XXXX.XX}{http://XXX-XXX.XXX.XX}{black}\\[6pt]
-\iconhref{Github}{16}{github.com/username}{https://www.github.com/username}{black}\\[6pt]
-\iconhref{Xing}{16}{xing.com/user\_name}{https://www.xing.com/profile/User_Name}{black}\\
 
-	
-%\cvqrcode{0.3}
+
+
+
+
 
 \end{leftcolumn}
 \begin{rightcolumn}
@@ -534,15 +481,6 @@
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-\cvsection{Biography}
-\vspace{4pt}
-
-\cvtext{\Blindtext[1]
-
-
-
-
-}
 
 
 %---------------------------------------------------------------------------------------
@@ -550,121 +488,40 @@
 %----------------------------------------------------------------------------------------
 
 \vspace{10pt}
-\cvsection{Work experience}
+\cvsection{Опыт программирования}
 \vspace{4pt}
 
 
 \cvevent
-{XX/XXXX - today}
-	{Research assistant | PhD student}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
+    
+	{Контрибьютор ClickHouse}
+	{Курсовая работа на 2 курсе - \\ Разработка Clickhouse под руководством Алексея Миловидова. Научился ориентироваться в больших проектах, стал лучше разбираться в Linux.}
 	\vfill\null
-
-
+	
 \cvevent
-{XX/XXXX - XX/XXXX}
-	{Part-time research assistant}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
+
+	{Изучение программирования на ФКН} \\ 
+	{Далее будет перечисленно всё, что я успел изучить в институте: \\
+	Контейнеры string/vector \\
+	Контейнеры стандартной библиотеки (array, deque, list, map, set, unordered\_map, unordered\_set)\\
+	Структуры, Классы, Шаблонные классы\\
+	Наследование, полиморфизм и абстракция\\
+	Создание процессов при помощи fork\\
+	Создание потоков при помощи thread\\
+	Линейные, динамические и жадные алгоритмы\\
+	Разделяй и властвуй \\
+	Биномиальная и двоичная куча\\
+	Красно чёрное дерево\\
+	BFS, DFS, Дейкстра, Остовное дерево\\
+	Конечные автоматы
+	}
+	\vfill\null	
 
 
 	
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Trainer - Course name}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-
-
-	
-\cvevent
-    {XX/XXXX - XX/XXXX}
-	{Trainer - Course name}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of ","  is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-	\vfill\null
-
-
-   	
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Trainer - Course name}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-
-	
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Part-time research assistant}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
 
 
 
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Internship}
-	{Department \newline Company name (Location)}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Student assistant}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-
-
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Trainer - Course name}
-	{Department of Lipsum (Prof. Name)\newline University of Lipsum}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-
-
-
-\cvevent
-{XX/XXXX - XX/XXXX}
-	{Working student}
-	{Department \newline Company name (Location)}
-	{Here you can describe your work content and go into detail about individual parts of this job. Possibly an enumeration by means of "," is useful. Otherwise, describe the essential content of this item in 1-2 sentences.}
-	\vfill\null
-
-
-\cvsection{Publications}
-
-\begin{itemize}[leftmargin=*]
-\item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-\item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-\item Author, G. \& Author, P. \&  Author G. (2020). "This is the title of the publication". In: \textit{Proceedings of the 28th Conference on Lipsum (LIPSUM)}, Lipsum, June 12-17, 2020.
-\end{itemize}
-% hofixes to create fake-space to ensure the whole height is used
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-
-
-Lorem, \today     \hspace{1cm}   \hrulefill
-
-\hspace*{30mm}\phantom{Lorem, \today }Philip Empl
 
 \end{rightcolumn}
 \end{paracol}
